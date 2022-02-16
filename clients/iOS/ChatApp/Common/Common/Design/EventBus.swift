@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 /// This simple implementation can store only one listener for the same `EventKey`
-///sldfk;lsdkfl;skdl;fksl;dkfl;skl;dfkl;sdkfl;skld;f
+/// 
 /// If `EventKey` is the same as rigistred but `DataType` is different will print warning into console but won't dispatch anything.
 public class EventBus<EventKey>: Bus where EventKey: Hashable {
     
