@@ -18,11 +18,11 @@ public protocol Bus {
     associatedtype EventKey: Hashable
     
     /// This method will dispatch event with data to this bus.
-    /// And if somebody is listening for it (called `subscribe` later) - he will recive data by specific event
+    /// And if somebody is listening for it (called ``subscribe(event:)`` later) - he will recive data by specific event
     func dispatch<DataType>(event: EventKey, data: DataType)
     
     /// This method will subscribe you on current event
-    /// If somebody call `dispatch` with your `EventKey` and your `DataType`
+    /// If somebody call ``dispatch(event:data:)`` with your ``EventKey`` and your ``DataType``
     /// then you will recive data in publisher
     ///
     /// Publisher is multiemitable - you don't have to renew subscription after each emition.

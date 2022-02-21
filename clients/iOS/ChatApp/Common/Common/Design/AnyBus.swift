@@ -7,6 +7,8 @@
 
 import Combine
 
+/// Box for any type of ``Bus`` just proxies calls to specifci implementation of ``Bus``
+/// Look at ``erase()``
 public struct AnyBus<EventKey: Hashable>: Bus {
 
     private let nested: __AnyBusStub<EventKey>
@@ -25,6 +27,12 @@ public struct AnyBus<EventKey: Hashable>: Bus {
     
     public func unsubscribe(event: EventKey) {
         self.nested.unsubscribe(event: event)
+    }
+}
+
+public extension Bus {
+    func erase() -> AnyBus<EventKey> {
+        return .init(nested: self)
     }
 }
 
