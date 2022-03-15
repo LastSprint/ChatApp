@@ -1,13 +1,24 @@
 # ``Common``
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+Reusable library
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+This module contains reusable elements and some basick concepts.
 
 ## Topics
 
-### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
+### Communication between application parts
 
-- <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
+- ``Bus`` - protocol for abstract message bus
+- ``AnyBus`` - container for any ``Bus`` implementation
+- ``EventBus`` - naive ``Bus`` implementation
+
+### Logging
+
+- ``Logger`` - protocol for abstract logger
+- ``ConsoleLoger`` - simple console logger
+
+### Utils
+
+- ``DictionaryThreadSafeWrapper``

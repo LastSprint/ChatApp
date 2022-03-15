@@ -16,7 +16,7 @@ public protocol Logger {
     func info(_ msg: String)
 }
 
-extension Logger {
+public extension Logger {
     /// Logs error through ``error(_:)`` method
     func error(_ err: Error) {
         self.error(err.localizedDescription)
@@ -39,6 +39,9 @@ extension os.Logger: Logger {
 }
 
 public class ConsoleLoger: Logger {
+    
+    public init() { }
+    
     /// Prints message into console in format `[ERR] {msg}`
     public func error(_ msg: String) {
         print("[ERR] \(msg)")
