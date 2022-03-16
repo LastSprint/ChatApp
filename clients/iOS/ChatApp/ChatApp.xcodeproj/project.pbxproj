@@ -53,6 +53,20 @@
 			remoteGlobalIDString = B9E22DA927E0707000BBA499;
 			remoteInfo = ExampleScreenTests;
 		};
+		B9E22E0627E1A21000BBA499 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9E22DE727E1A20F00BBA499;
+			remoteInfo = AuthScreen;
+		};
+		B9E22E0827E1A21000BBA499 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9E22DF127E1A20F00BBA499;
+			remoteInfo = AuthScreenTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +94,7 @@
 		B91B611A27BD102500C01090 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B91B614027BD11F400C01090 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
 		B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ExampleScreen.xcodeproj; path = ../../../../../../Desktop/ExampleScreen/ExampleScreen.xcodeproj; sourceTree = "<group>"; };
+		B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AuthScreen.xcodeproj; path = ../../../../../../Desktop/AuthScreen/AuthScreen.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +113,7 @@
 		B91B60FA27BD0F5800C01090 = {
 			isa = PBXGroup;
 			children = (
+				B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */,
 				B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */,
 				B91B614027BD11F400C01090 /* Common.xcodeproj */,
 				B91B611A27BD102500C01090 /* README.md */,
@@ -153,6 +169,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B9E22E0227E1A20F00BBA499 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22E0727E1A21000BBA499 /* AuthScreen.framework */,
+				B9E22E0927E1A21000BBA499 /* AuthScreenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,6 +228,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = B9E22E0227E1A20F00BBA499 /* Products */;
+					ProjectRef = B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */;
+				},
+				{
 					ProductGroup = B91B614127BD11F400C01090 /* Products */;
 					ProjectRef = B91B614027BD11F400C01090 /* Common.xcodeproj */;
 				},
@@ -245,6 +274,20 @@
 			fileType = wrapper.cfbundle;
 			path = ExampleScreenTests.xctest;
 			remoteRef = B9E22DC027E0707000BBA499 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B9E22E0727E1A21000BBA499 /* AuthScreen.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AuthScreen.framework;
+			remoteRef = B9E22E0627E1A21000BBA499 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B9E22E0927E1A21000BBA499 /* AuthScreenTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AuthScreenTests.xctest;
+			remoteRef = B9E22E0827E1A21000BBA499 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
