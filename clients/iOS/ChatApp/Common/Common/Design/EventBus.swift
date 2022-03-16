@@ -8,9 +8,9 @@
 import Foundation
 import Combine
 
-/// This simple implementation can store only one listener for the same ``EventKey``
+/// This simple implementation can store only one listener for the same `EventKey`
 /// 
-/// If ``EventKey`` is the same as rigistred but ``DataType`` is different will print warning into console but won't dispatch anything.
+/// If `EventKey` is the same as rigistred but `DataType` is different will print warning into console but won't dispatch anything.
 ///
 /// For more infomation look at contract declared in ``Bus``
 public class EventBus<EventKey>: Bus where EventKey: Hashable {

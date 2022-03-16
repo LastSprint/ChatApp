@@ -22,7 +22,7 @@ public protocol Bus {
     func dispatch<DataType>(event: EventKey, data: DataType)
     
     /// This method will subscribe you on current event
-    /// If somebody call ``dispatch(event:data:)`` with your ``EventKey`` and your ``DataType``
+    /// If somebody call ``dispatch(event:data:)`` with your ``EventKey`` and your `DataType`
     /// then you will recive data in publisher
     ///
     /// Publisher is multiemitable - you don't have to renew subscription after each emition.

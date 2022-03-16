@@ -10,14 +10,14 @@ This module contains reusable elements and some basick concepts.
 
 ### Communication between application parts
 
-- ``Bus`` - protocol for abstract message bus
-- ``AnyBus`` - container for any ``Bus`` implementation
-- ``EventBus`` - naive ``Bus`` implementation
+- ``Bus``
+- ``AnyBus``
+- ``EventBus``
 
 ### Logging
 
-- ``Logger`` - protocol for abstract logger
-- ``ConsoleLoger`` - simple console logger
+- ``Logger``
+- ``ConsoleLoger``
 
 ### Utils
 

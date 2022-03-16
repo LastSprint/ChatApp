@@ -13,10 +13,8 @@
 		B91B611027BD0F5A00C01090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91B610F27BD0F5A00C01090 /* Assets.xcassets */; };
 		B91B611327BD0F5A00C01090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91B611127BD0F5A00C01090 /* LaunchScreen.storyboard */; };
 		B9E22D9227E05F1B00BBA499 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91B614627BD11F400C01090 /* Common.framework */; };
-		B9E3AA2627C4C64400D0554E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3AA2527C4C64400D0554E /* Service.swift */; };
-		B9E3AA2827C4C64D00D0554E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3AA2727C4C64D00D0554E /* Controller.swift */; };
-		B9E3AA2A27C4C65600D0554E /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3AA2927C4C65600D0554E /* Presenter.swift */; };
-		B9E3AA2C27C4D26100D0554E /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3AA2B27C4D26100D0554E /* Assembler.swift */; };
+		B9E22DD427E0710700BBA499 /* ExampleScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */; };
+		B9E22DD527E0710700BBA499 /* ExampleScreen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +39,35 @@
 			remoteGlobalIDString = B91B612527BD11F300C01090;
 			remoteInfo = Common;
 		};
+		B9E22DBE27E0707000BBA499 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9E22D9F27E0707000BBA499;
+			remoteInfo = ExampleScreen;
+		};
+		B9E22DC027E0707000BBA499 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9E22DA927E0707000BBA499;
+			remoteInfo = ExampleScreenTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9E22DD627E0710700BBA499 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B9E22DD527E0710700BBA499 /* ExampleScreen.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B91B610327BD0F5800C01090 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,10 +79,7 @@
 		B91B611427BD0F5A00C01090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B91B611A27BD102500C01090 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B91B614027BD11F400C01090 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
-		B9E3AA2527C4C64400D0554E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		B9E3AA2727C4C64D00D0554E /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
-		B9E3AA2927C4C65600D0554E /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		B9E3AA2B27C4D26100D0554E /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ExampleScreen.xcodeproj; path = ../../../../../../Desktop/ExampleScreen/ExampleScreen.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E22D9227E05F1B00BBA499 /* Common.framework in Frameworks */,
+				B9E22DD427E0710700BBA499 /* ExampleScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +98,7 @@
 		B91B60FA27BD0F5800C01090 = {
 			isa = PBXGroup;
 			children = (
+				B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */,
 				B91B614027BD11F400C01090 /* Common.xcodeproj */,
 				B91B611A27BD102500C01090 /* README.md */,
 				B91B610527BD0F5800C01090 /* ChatApp */,
@@ -93,7 +118,6 @@
 		B91B610527BD0F5800C01090 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
-				B9E3AA2227C4C63600D0554E /* ExampleModule */,
 				B91B610627BD0F5800C01090 /* AppDelegate.swift */,
 				B91B610827BD0F5800C01090 /* SceneDelegate.swift */,
 				B91B610A27BD0F5800C01090 /* ViewController.swift */,
@@ -120,15 +144,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B9E3AA2227C4C63600D0554E /* ExampleModule */ = {
+		B9E22DBA27E0707000BBA499 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9E3AA2527C4C64400D0554E /* Service.swift */,
-				B9E3AA2727C4C64D00D0554E /* Controller.swift */,
-				B9E3AA2927C4C65600D0554E /* Presenter.swift */,
-				B9E3AA2B27C4D26100D0554E /* Assembler.swift */,
+				B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */,
+				B9E22DC127E0707000BBA499 /* ExampleScreenTests.xctest */,
 			);
-			path = ExampleModule;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +163,7 @@
 				B91B60FF27BD0F5800C01090 /* Sources */,
 				B91B610027BD0F5800C01090 /* Frameworks */,
 				B91B610127BD0F5800C01090 /* Resources */,
+				B9E22DD627E0710700BBA499 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +206,10 @@
 					ProductGroup = B91B614127BD11F400C01090 /* Products */;
 					ProjectRef = B91B614027BD11F400C01090 /* Common.xcodeproj */;
 				},
+				{
+					ProductGroup = B9E22DBA27E0707000BBA499 /* Products */;
+					ProjectRef = B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -206,6 +233,20 @@
 			remoteRef = B91B614727BD11F400C01090 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ExampleScreen.framework;
+			remoteRef = B9E22DBE27E0707000BBA499 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B9E22DC127E0707000BBA499 /* ExampleScreenTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExampleScreenTests.xctest;
+			remoteRef = B9E22DC027E0707000BBA499 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -225,11 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9E3AA2A27C4C65600D0554E /* Presenter.swift in Sources */,
-				B9E3AA2827C4C64D00D0554E /* Controller.swift in Sources */,
-				B9E3AA2C27C4D26100D0554E /* Assembler.swift in Sources */,
 				B91B610B27BD0F5800C01090 /* ViewController.swift in Sources */,
-				B9E3AA2627C4C64400D0554E /* Service.swift in Sources */,
 				B91B610727BD0F5800C01090 /* AppDelegate.swift in Sources */,
 				B91B610927BD0F5800C01090 /* SceneDelegate.swift in Sources */,
 			);

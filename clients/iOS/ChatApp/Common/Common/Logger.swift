@@ -9,7 +9,7 @@ import Foundation
 import os
 
 /// Custom protocol for logging
-/// ``OS.Logger`` supports this protocol out of the box and also there is ``ConsoleLoger``
+/// `OS.Logger` supports this protocol out of the box and also there is ``ConsoleLoger``
 public protocol Logger {
     func warn(_ msg: String)
     func error(_ msg: String)
