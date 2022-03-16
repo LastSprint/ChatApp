@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		B91B610727BD0F5800C01090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B610627BD0F5800C01090 /* AppDelegate.swift */; };
 		B91B610927BD0F5800C01090 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B610827BD0F5800C01090 /* SceneDelegate.swift */; };
-		B91B610B27BD0F5800C01090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B610A27BD0F5800C01090 /* ViewController.swift */; };
 		B91B611027BD0F5A00C01090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91B610F27BD0F5A00C01090 /* Assets.xcassets */; };
 		B91B611327BD0F5A00C01090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91B611127BD0F5A00C01090 /* LaunchScreen.storyboard */; };
-		B9E22D9227E05F1B00BBA499 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91B614627BD11F400C01090 /* Common.framework */; };
 		B9E22DD427E0710700BBA499 /* ExampleScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */; };
 		B9E22DD527E0710700BBA499 /* ExampleScreen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9E22E1927E1AE4400BBA499 /* AuthScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22E0727E1A21000BBA499 /* AuthScreen.framework */; };
 		B9E22E1A27E1AE4400BBA499 /* AuthScreen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22E0727E1A21000BBA499 /* AuthScreen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B9E22E2127E1F6F100BBA499 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91B614627BD11F400C01090 /* Common.framework */; };
+		B9E22E2227E1F6F100BBA499 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B91B614627BD11F400C01090 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B9E22E2227E1F6F100BBA499 /* Common.framework in Embed Frameworks */,
 				B9E22E1A27E1AE4400BBA499 /* AuthScreen.framework in Embed Frameworks */,
 				B9E22DD527E0710700BBA499 /* ExampleScreen.framework in Embed Frameworks */,
 			);
@@ -90,7 +91,6 @@
 		B91B610327BD0F5800C01090 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91B610627BD0F5800C01090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B91B610827BD0F5800C01090 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B91B610A27BD0F5800C01090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B91B610F27BD0F5A00C01090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B91B611227BD0F5A00C01090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B91B611427BD0F5A00C01090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9E22D9227E05F1B00BBA499 /* Common.framework in Frameworks */,
+				B9E22E2127E1F6F100BBA499 /* Common.framework in Frameworks */,
 				B9E22DD427E0710700BBA499 /* ExampleScreen.framework in Frameworks */,
 				B9E22E1927E1AE4400BBA499 /* AuthScreen.framework in Frameworks */,
 			);
@@ -140,7 +140,6 @@
 			children = (
 				B91B610627BD0F5800C01090 /* AppDelegate.swift */,
 				B91B610827BD0F5800C01090 /* SceneDelegate.swift */,
-				B91B610A27BD0F5800C01090 /* ViewController.swift */,
 				B91B610F27BD0F5A00C01090 /* Assets.xcassets */,
 				B91B611127BD0F5A00C01090 /* LaunchScreen.storyboard */,
 				B91B611427BD0F5A00C01090 /* Info.plist */,
@@ -313,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91B610B27BD0F5800C01090 /* ViewController.swift in Sources */,
 				B91B610727BD0F5800C01090 /* AppDelegate.swift in Sources */,
 				B91B610927BD0F5800C01090 /* SceneDelegate.swift in Sources */,
 			);
@@ -462,9 +460,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZJ45BEVK69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -490,9 +489,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZJ45BEVK69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
