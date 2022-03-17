@@ -16,6 +16,7 @@
 		B91B614F27BD2F4200C01090 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B614E27BD2F4200C01090 /* EventBus.swift */; };
 		B91B615427BD358800C01090 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B615327BD358800C01090 /* Logger.swift */; };
 		B9E22E1D27E1D14000BBA499 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22E1C27E1D14000BBA499 /* UIView.swift */; };
+		B9E22E2B27E20D3C00BBA499 /* SnackMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22E2A27E20D3C00BBA499 /* SnackMessage.swift */; };
 		B9E3AA2127C394D500D0554E /* DictionaryThreadSafeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3AA2027C394D500D0554E /* DictionaryThreadSafeWrapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		B91B614E27BD2F4200C01090 /* EventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
 		B91B615327BD358800C01090 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		B9E22E1C27E1D14000BBA499 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B9E22E2A27E20D3C00BBA499 /* SnackMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackMessage.swift; sourceTree = "<group>"; };
 		B9E3AA2027C394D500D0554E /* DictionaryThreadSafeWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryThreadSafeWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		B91B612827BD11F300C01090 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B9E22E2927E20D2E00BBA499 /* SnackMessage */,
 				B9E22E1B27E1D13600BBA499 /* Extensions */,
 				B9E3AA1F27C394AE00D0554E /* Utils */,
 				B91B614927BD12EF00C01090 /* Design */,
@@ -117,6 +120,14 @@
 				B9E22E1C27E1D14000BBA499 /* UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B9E22E2927E20D2E00BBA499 /* SnackMessage */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22E2A27E20D3C00BBA499 /* SnackMessage.swift */,
+			);
+			path = SnackMessage;
 			sourceTree = "<group>";
 		};
 		B9E3AA1F27C394AE00D0554E /* Utils */ = {
@@ -238,6 +249,7 @@
 			files = (
 				B91B615427BD358800C01090 /* Logger.swift in Sources */,
 				B91B614B27BD131100C01090 /* Bus.swift in Sources */,
+				B9E22E2B27E20D3C00BBA499 /* SnackMessage.swift in Sources */,
 				B91B614F27BD2F4200C01090 /* EventBus.swift in Sources */,
 				B9E22E1D27E1D14000BBA499 /* UIView.swift in Sources */,
 				B91B614D27BD2D5000C01090 /* AnyBus.swift in Sources */,
