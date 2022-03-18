@@ -11,13 +11,13 @@
 		B9D0287327E43C07001B8305 /* AuthScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D0286827E43C07001B8305 /* AuthScreen.framework */; };
 		B9D0287827E43C07001B8305 /* AuthScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0287727E43C07001B8305 /* AuthScreenTests.swift */; };
 		B9D0287927E43C07001B8305 /* AuthScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D0286B27E43C07001B8305 /* AuthScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9D0289D27E43C54001B8305 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0289327E43C54001B8305 /* Assembler.swift */; };
-		B9D0289E27E43C54001B8305 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0289527E43C54001B8305 /* CustomTextField.swift */; };
-		B9D0289F27E43C54001B8305 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0289627E43C54001B8305 /* LoadingButton.swift */; };
-		B9D028A027E43C54001B8305 /* SignInRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0289927E43C54001B8305 /* SignInRequestModel.swift */; };
-		B9D028A127E43C54001B8305 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0289A27E43C54001B8305 /* Presenter.swift */; };
-		B9D028A227E43C54001B8305 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0289B27E43C54001B8305 /* Service.swift */; };
-		B9D028A327E43C54001B8305 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0289C27E43C54001B8305 /* Controller.swift */; };
+		B9D028B527E43E80001B8305 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028AB27E43E80001B8305 /* Service.swift */; };
+		B9D028B627E43E80001B8305 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028AC27E43E80001B8305 /* Assembler.swift */; };
+		B9D028B727E43E80001B8305 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028AD27E43E80001B8305 /* Controller.swift */; };
+		B9D028B827E43E80001B8305 /* SignInRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028B027E43E80001B8305 /* SignInRequestModel.swift */; };
+		B9D028B927E43E80001B8305 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028B227E43E80001B8305 /* CustomTextField.swift */; };
+		B9D028BA27E43E80001B8305 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028B327E43E80001B8305 /* LoadingButton.swift */; };
+		B9D028BB27E43E80001B8305 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028B427E43E80001B8305 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +36,13 @@
 		B9D0286C27E43C07001B8305 /* AuthScreen.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AuthScreen.docc; sourceTree = "<group>"; };
 		B9D0287227E43C07001B8305 /* AuthScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D0287727E43C07001B8305 /* AuthScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenTests.swift; sourceTree = "<group>"; };
-		B9D0289327E43C54001B8305 /* Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Assembler.swift; path = ../../../AuthScreen/AuthScreen/Assembler.swift; sourceTree = "<group>"; };
-		B9D0289527E43C54001B8305 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		B9D0289627E43C54001B8305 /* LoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
-		B9D0289927E43C54001B8305 /* SignInRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRequestModel.swift; sourceTree = "<group>"; };
-		B9D0289A27E43C54001B8305 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = ../../../AuthScreen/AuthScreen/Presenter.swift; sourceTree = "<group>"; };
-		B9D0289B27E43C54001B8305 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = ../../../AuthScreen/AuthScreen/Service.swift; sourceTree = "<group>"; };
-		B9D0289C27E43C54001B8305 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = ../../../AuthScreen/AuthScreen/Controller.swift; sourceTree = "<group>"; };
+		B9D028AB27E43E80001B8305 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B9D028AC27E43E80001B8305 /* Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		B9D028AD27E43E80001B8305 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		B9D028B027E43E80001B8305 /* SignInRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRequestModel.swift; sourceTree = "<group>"; };
+		B9D028B227E43E80001B8305 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B9D028B327E43E80001B8305 /* LoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		B9D028B427E43E80001B8305 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +85,12 @@
 		B9D0286A27E43C07001B8305 /* AuthScreen */ = {
 			isa = PBXGroup;
 			children = (
-				B9D0289327E43C54001B8305 /* Assembler.swift */,
-				B9D0289C27E43C54001B8305 /* Controller.swift */,
-				B9D0289427E43C54001B8305 /* Controls */,
-				B9D0289727E43C54001B8305 /* Models */,
-				B9D0289A27E43C54001B8305 /* Presenter.swift */,
-				B9D0289B27E43C54001B8305 /* Service.swift */,
+				B9D028AC27E43E80001B8305 /* Assembler.swift */,
+				B9D028AD27E43E80001B8305 /* Controller.swift */,
+				B9D028B127E43E80001B8305 /* Controls */,
+				B9D028AE27E43E80001B8305 /* Models */,
+				B9D028B427E43E80001B8305 /* Presenter.swift */,
+				B9D028AB27E43E80001B8305 /* Service.swift */,
 				B9D0286B27E43C07001B8305 /* AuthScreen.h */,
 				B9D0286C27E43C07001B8305 /* AuthScreen.docc */,
 			);
@@ -105,31 +105,29 @@
 			path = AuthScreenTests;
 			sourceTree = "<group>";
 		};
-		B9D0289427E43C54001B8305 /* Controls */ = {
+		B9D028AE27E43E80001B8305 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B9D0289527E43C54001B8305 /* CustomTextField.swift */,
-				B9D0289627E43C54001B8305 /* LoadingButton.swift */,
+				B9D028AF27E43E80001B8305 /* Entity */,
 			);
-			name = Controls;
-			path = ../../../AuthScreen/AuthScreen/Controls;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		B9D0289727E43C54001B8305 /* Models */ = {
+		B9D028AF27E43E80001B8305 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				B9D0289827E43C54001B8305 /* Entity */,
-			);
-			name = Models;
-			path = ../../../AuthScreen/AuthScreen/Models;
-			sourceTree = "<group>";
-		};
-		B9D0289827E43C54001B8305 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				B9D0289927E43C54001B8305 /* SignInRequestModel.swift */,
+				B9D028B027E43E80001B8305 /* SignInRequestModel.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		B9D028B127E43E80001B8305 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				B9D028B227E43E80001B8305 /* CustomTextField.swift */,
+				B9D028B327E43E80001B8305 /* LoadingButton.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,14 +239,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D028A127E43C54001B8305 /* Presenter.swift in Sources */,
-				B9D028A227E43C54001B8305 /* Service.swift in Sources */,
-				B9D0289F27E43C54001B8305 /* LoadingButton.swift in Sources */,
-				B9D0289D27E43C54001B8305 /* Assembler.swift in Sources */,
 				B9D0286D27E43C07001B8305 /* AuthScreen.docc in Sources */,
-				B9D0289E27E43C54001B8305 /* CustomTextField.swift in Sources */,
-				B9D028A027E43C54001B8305 /* SignInRequestModel.swift in Sources */,
-				B9D028A327E43C54001B8305 /* Controller.swift in Sources */,
+				B9D028BA27E43E80001B8305 /* LoadingButton.swift in Sources */,
+				B9D028BB27E43E80001B8305 /* Presenter.swift in Sources */,
+				B9D028B627E43E80001B8305 /* Assembler.swift in Sources */,
+				B9D028B927E43E80001B8305 /* CustomTextField.swift in Sources */,
+				B9D028B527E43E80001B8305 /* Service.swift in Sources */,
+				B9D028B727E43E80001B8305 /* Controller.swift in Sources */,
+				B9D028B827E43E80001B8305 /* SignInRequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

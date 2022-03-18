@@ -10,10 +10,10 @@
 		B9D0284027E43BDF001B8305 /* ExampleScreen.docc in Sources */ = {isa = PBXBuildFile; fileRef = B9D0283F27E43BDF001B8305 /* ExampleScreen.docc */; };
 		B9D0284627E43BDF001B8305 /* ExampleScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D0283B27E43BDF001B8305 /* ExampleScreen.framework */; };
 		B9D0284C27E43BDF001B8305 /* ExampleScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D0283E27E43BDF001B8305 /* ExampleScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9D0288C27E43C19001B8305 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0288B27E43C19001B8305 /* Service.swift */; };
-		B9D0289027E43C24001B8305 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0288D27E43C24001B8305 /* Presenter.swift */; };
-		B9D0289127E43C24001B8305 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0288E27E43C24001B8305 /* Assembler.swift */; };
-		B9D0289227E43C24001B8305 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0288F27E43C24001B8305 /* Controller.swift */; };
+		B9D028C027E43E9B001B8305 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028BC27E43E9B001B8305 /* Assembler.swift */; };
+		B9D028C127E43E9B001B8305 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028BD27E43E9B001B8305 /* Controller.swift */; };
+		B9D028C227E43E9B001B8305 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028BE27E43E9B001B8305 /* Service.swift */; };
+		B9D028C327E43E9B001B8305 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028BF27E43E9B001B8305 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +31,10 @@
 		B9D0283E27E43BDF001B8305 /* ExampleScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleScreen.h; sourceTree = "<group>"; };
 		B9D0283F27E43BDF001B8305 /* ExampleScreen.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ExampleScreen.docc; sourceTree = "<group>"; };
 		B9D0284527E43BDF001B8305 /* ExampleScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9D0288B27E43C19001B8305 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = ../../../ExampleScreen_2/ExampleScreen/Service.swift; sourceTree = "<group>"; };
-		B9D0288D27E43C24001B8305 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = ../../../ExampleScreen_2/ExampleScreen/Presenter.swift; sourceTree = "<group>"; };
-		B9D0288E27E43C24001B8305 /* Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Assembler.swift; path = ../../../ExampleScreen_2/ExampleScreen/Assembler.swift; sourceTree = "<group>"; };
-		B9D0288F27E43C24001B8305 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = ../../../ExampleScreen_2/ExampleScreen/Controller.swift; sourceTree = "<group>"; };
+		B9D028BC27E43E9B001B8305 /* Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		B9D028BD27E43E9B001B8305 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		B9D028BE27E43E9B001B8305 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B9D028BF27E43E9B001B8305 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +76,10 @@
 		B9D0283D27E43BDF001B8305 /* ExampleScreen */ = {
 			isa = PBXGroup;
 			children = (
-				B9D0288E27E43C24001B8305 /* Assembler.swift */,
-				B9D0288F27E43C24001B8305 /* Controller.swift */,
-				B9D0288D27E43C24001B8305 /* Presenter.swift */,
-				B9D0288B27E43C19001B8305 /* Service.swift */,
+				B9D028BC27E43E9B001B8305 /* Assembler.swift */,
+				B9D028BD27E43E9B001B8305 /* Controller.swift */,
+				B9D028BF27E43E9B001B8305 /* Presenter.swift */,
+				B9D028BE27E43E9B001B8305 /* Service.swift */,
 				B9D0283E27E43BDF001B8305 /* ExampleScreen.h */,
 				B9D0283F27E43BDF001B8305 /* ExampleScreen.docc */,
 			);
@@ -195,11 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D0289227E43C24001B8305 /* Controller.swift in Sources */,
-				B9D0289127E43C24001B8305 /* Assembler.swift in Sources */,
-				B9D0289027E43C24001B8305 /* Presenter.swift in Sources */,
+				B9D028C127E43E9B001B8305 /* Controller.swift in Sources */,
+				B9D028C227E43E9B001B8305 /* Service.swift in Sources */,
+				B9D028C027E43E9B001B8305 /* Assembler.swift in Sources */,
 				B9D0284027E43BDF001B8305 /* ExampleScreen.docc in Sources */,
-				B9D0288C27E43C19001B8305 /* Service.swift in Sources */,
+				B9D028C327E43E9B001B8305 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
