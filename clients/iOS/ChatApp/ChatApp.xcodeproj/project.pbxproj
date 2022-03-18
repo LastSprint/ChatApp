@@ -11,10 +11,10 @@
 		B91B610927BD0F5800C01090 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B610827BD0F5800C01090 /* SceneDelegate.swift */; };
 		B91B611027BD0F5A00C01090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91B610F27BD0F5A00C01090 /* Assets.xcassets */; };
 		B91B611327BD0F5A00C01090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91B611127BD0F5A00C01090 /* LaunchScreen.storyboard */; };
-		B9E22DD427E0710700BBA499 /* ExampleScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */; };
-		B9E22DD527E0710700BBA499 /* ExampleScreen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9E22E1927E1AE4400BBA499 /* AuthScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22E0727E1A21000BBA499 /* AuthScreen.framework */; };
-		B9E22E1A27E1AE4400BBA499 /* AuthScreen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9E22E0727E1A21000BBA499 /* AuthScreen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B9D028A427E43C7B001B8305 /* AuthScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D0288827E43C07001B8305 /* AuthScreen.framework */; };
+		B9D028A527E43C7B001B8305 /* AuthScreen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9D0288827E43C07001B8305 /* AuthScreen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B9D028A627E43C7B001B8305 /* ExampleScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D0285B27E43BE0001B8305 /* ExampleScreen.framework */; };
+		B9D028A727E43C7B001B8305 /* ExampleScreen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9D0285B27E43BE0001B8305 /* ExampleScreen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9E22E2127E1F6F100BBA499 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91B614627BD11F400C01090 /* Common.framework */; };
 		B9E22E2227E1F6F100BBA499 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B91B614627BD11F400C01090 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -34,40 +34,40 @@
 			remoteGlobalIDString = B91B613027BD11F400C01090;
 			remoteInfo = CommonTests;
 		};
+		B9D0285A27E43BE0001B8305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D0285527E43BDF001B8305 /* ExampleScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9D0283B27E43BDF001B8305;
+			remoteInfo = ExampleScreen;
+		};
+		B9D0285C27E43BE0001B8305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D0285527E43BDF001B8305 /* ExampleScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9D0284527E43BDF001B8305;
+			remoteInfo = ExampleScreenTests;
+		};
+		B9D0288727E43C07001B8305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D0288227E43C07001B8305 /* AuthScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9D0286827E43C07001B8305;
+			remoteInfo = AuthScreen;
+		};
+		B9D0288927E43C07001B8305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D0288227E43C07001B8305 /* AuthScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9D0287227E43C07001B8305;
+			remoteInfo = AuthScreenTests;
+		};
 		B9E22D9327E05F2000BBA499 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B91B614027BD11F400C01090 /* Common.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = B91B612527BD11F300C01090;
 			remoteInfo = Common;
-		};
-		B9E22DBE27E0707000BBA499 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B9E22D9F27E0707000BBA499;
-			remoteInfo = ExampleScreen;
-		};
-		B9E22DC027E0707000BBA499 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B9E22DA927E0707000BBA499;
-			remoteInfo = ExampleScreenTests;
-		};
-		B9E22E0627E1A21000BBA499 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B9E22DE727E1A20F00BBA499;
-			remoteInfo = AuthScreen;
-		};
-		B9E22E0827E1A21000BBA499 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B9E22DF127E1A20F00BBA499;
-			remoteInfo = AuthScreenTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -78,9 +78,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B9D028A527E43C7B001B8305 /* AuthScreen.framework in Embed Frameworks */,
 				B9E22E2227E1F6F100BBA499 /* Common.framework in Embed Frameworks */,
-				B9E22E1A27E1AE4400BBA499 /* AuthScreen.framework in Embed Frameworks */,
-				B9E22DD527E0710700BBA499 /* ExampleScreen.framework in Embed Frameworks */,
+				B9D028A727E43C7B001B8305 /* ExampleScreen.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,8 +96,8 @@
 		B91B611427BD0F5A00C01090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B91B611A27BD102500C01090 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B91B614027BD11F400C01090 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
-		B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ExampleScreen.xcodeproj; path = ../../../../../../Desktop/ExampleScreen/ExampleScreen.xcodeproj; sourceTree = "<group>"; };
-		B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AuthScreen.xcodeproj; path = ../../../../../../Desktop/AuthScreen/AuthScreen.xcodeproj; sourceTree = "<group>"; };
+		B9D0285527E43BDF001B8305 /* ExampleScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ExampleScreen.xcodeproj; path = ExampleScreen/ExampleScreen.xcodeproj; sourceTree = "<group>"; };
+		B9D0288227E43C07001B8305 /* AuthScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AuthScreen.xcodeproj; path = AuthScreen/AuthScreen.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +105,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D028A427E43C7B001B8305 /* AuthScreen.framework in Frameworks */,
 				B9E22E2127E1F6F100BBA499 /* Common.framework in Frameworks */,
-				B9E22DD427E0710700BBA499 /* ExampleScreen.framework in Frameworks */,
-				B9E22E1927E1AE4400BBA499 /* AuthScreen.framework in Frameworks */,
+				B9D028A627E43C7B001B8305 /* ExampleScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +117,7 @@
 		B91B60FA27BD0F5800C01090 = {
 			isa = PBXGroup;
 			children = (
-				B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */,
-				B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */,
+				B9D0283027E43BB3001B8305 /* Screens */,
 				B91B614027BD11F400C01090 /* Common.xcodeproj */,
 				B91B611A27BD102500C01090 /* README.md */,
 				B91B610527BD0F5800C01090 /* ChatApp */,
@@ -156,29 +155,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B9D0283027E43BB3001B8305 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B9D0288227E43C07001B8305 /* AuthScreen.xcodeproj */,
+				B9D0285527E43BDF001B8305 /* ExampleScreen.xcodeproj */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B9D0285627E43BDF001B8305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9D0285B27E43BE0001B8305 /* ExampleScreen.framework */,
+				B9D0285D27E43BE0001B8305 /* ExampleScreenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9D0288327E43C07001B8305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9D0288827E43C07001B8305 /* AuthScreen.framework */,
+				B9D0288A27E43C07001B8305 /* AuthScreenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B9E22D8F27E05F1B00BBA499 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B9E22DBA27E0707000BBA499 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */,
-				B9E22DC127E0707000BBA499 /* ExampleScreenTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B9E22E0227E1A20F00BBA499 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B9E22E0727E1A21000BBA499 /* AuthScreen.framework */,
-				B9E22E0927E1A21000BBA499 /* AuthScreenTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,16 +239,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B9E22E0227E1A20F00BBA499 /* Products */;
-					ProjectRef = B9E22E0127E1A20F00BBA499 /* AuthScreen.xcodeproj */;
+					ProductGroup = B9D0288327E43C07001B8305 /* Products */;
+					ProjectRef = B9D0288227E43C07001B8305 /* AuthScreen.xcodeproj */;
 				},
 				{
 					ProductGroup = B91B614127BD11F400C01090 /* Products */;
 					ProjectRef = B91B614027BD11F400C01090 /* Common.xcodeproj */;
 				},
 				{
-					ProductGroup = B9E22DBA27E0707000BBA499 /* Products */;
-					ProjectRef = B9E22DB927E0707000BBA499 /* ExampleScreen.xcodeproj */;
+					ProductGroup = B9D0285627E43BDF001B8305 /* Products */;
+					ProjectRef = B9D0285527E43BDF001B8305 /* ExampleScreen.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -265,32 +273,32 @@
 			remoteRef = B91B614727BD11F400C01090 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B9E22DBF27E0707000BBA499 /* ExampleScreen.framework */ = {
+		B9D0285B27E43BE0001B8305 /* ExampleScreen.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ExampleScreen.framework;
-			remoteRef = B9E22DBE27E0707000BBA499 /* PBXContainerItemProxy */;
+			remoteRef = B9D0285A27E43BE0001B8305 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B9E22DC127E0707000BBA499 /* ExampleScreenTests.xctest */ = {
+		B9D0285D27E43BE0001B8305 /* ExampleScreenTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ExampleScreenTests.xctest;
-			remoteRef = B9E22DC027E0707000BBA499 /* PBXContainerItemProxy */;
+			remoteRef = B9D0285C27E43BE0001B8305 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B9E22E0727E1A21000BBA499 /* AuthScreen.framework */ = {
+		B9D0288827E43C07001B8305 /* AuthScreen.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AuthScreen.framework;
-			remoteRef = B9E22E0627E1A21000BBA499 /* PBXContainerItemProxy */;
+			remoteRef = B9D0288727E43C07001B8305 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B9E22E0927E1A21000BBA499 /* AuthScreenTests.xctest */ = {
+		B9D0288A27E43C07001B8305 /* AuthScreenTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = AuthScreenTests.xctest;
-			remoteRef = B9E22E0827E1A21000BBA499 /* PBXContainerItemProxy */;
+			remoteRef = B9D0288927E43C07001B8305 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
