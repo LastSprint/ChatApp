@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SignInRequestModel {
-    let username: String
-    let password: String
+public struct SignInRequestModel {
+    public let username: String
+    public let password: String
 }

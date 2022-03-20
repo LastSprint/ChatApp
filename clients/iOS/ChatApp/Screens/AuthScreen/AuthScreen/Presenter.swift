@@ -10,7 +10,7 @@ import Common
 import Combine
 
 protocol ViewOutput {
-    
+    /// Call this method when user wanted to sign in
     func signIn(userName: String?, password: String?)
 }
 
@@ -70,7 +70,9 @@ private extension Presenter {
                 guard case .failure(let err) = completion else { return }
                 self.logger.error(err)
             } receiveValue: {
+                self.view?.showGeneralError()
                 self.logger.info("Auth was success")
+                self.view?.onLoading(isStarted: false)
             }.store(in: &self.disposeBag)
     }
 }

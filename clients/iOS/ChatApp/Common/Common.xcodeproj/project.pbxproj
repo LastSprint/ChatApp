@@ -15,6 +15,10 @@
 		B91B614D27BD2D5000C01090 /* AnyBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B614C27BD2D5000C01090 /* AnyBus.swift */; };
 		B91B614F27BD2F4200C01090 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B614E27BD2F4200C01090 /* EventBus.swift */; };
 		B91B615427BD358800C01090 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91B615327BD358800C01090 /* Logger.swift */; };
+		B970581327E61E5000B4902B /* SnackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970581227E61E5000B4902B /* SnackManager.swift */; };
+		B970581527E6220300B4902B /* DefaultSnackMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970581427E6220300B4902B /* DefaultSnackMessage.swift */; };
+		B970581727E6281600B4902B /* InfoSnackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970581627E6281600B4902B /* InfoSnackView.swift */; };
+		B970582427E6DBE000B4902B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970582327E6DBE000B4902B /* String.swift */; };
 		B9E22E1D27E1D14000BBA499 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22E1C27E1D14000BBA499 /* UIView.swift */; };
 		B9E22E2B27E20D3C00BBA499 /* SnackMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22E2A27E20D3C00BBA499 /* SnackMessage.swift */; };
 		B9E3AA2127C394D500D0554E /* DictionaryThreadSafeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3AA2027C394D500D0554E /* DictionaryThreadSafeWrapper.swift */; };
@@ -40,6 +44,10 @@
 		B91B614C27BD2D5000C01090 /* AnyBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyBus.swift; sourceTree = "<group>"; };
 		B91B614E27BD2F4200C01090 /* EventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
 		B91B615327BD358800C01090 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B970581227E61E5000B4902B /* SnackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackManager.swift; sourceTree = "<group>"; };
+		B970581427E6220300B4902B /* DefaultSnackMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSnackMessage.swift; sourceTree = "<group>"; };
+		B970581627E6281600B4902B /* InfoSnackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSnackView.swift; sourceTree = "<group>"; };
+		B970582327E6DBE000B4902B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B9E22E1C27E1D14000BBA499 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B9E22E2A27E20D3C00BBA499 /* SnackMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackMessage.swift; sourceTree = "<group>"; };
 		B9E3AA2027C394D500D0554E /* DictionaryThreadSafeWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryThreadSafeWrapper.swift; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				B9E22E1C27E1D14000BBA499 /* UIView.swift */,
+				B970582327E6DBE000B4902B /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,6 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				B9E22E2A27E20D3C00BBA499 /* SnackMessage.swift */,
+				B970581227E61E5000B4902B /* SnackManager.swift */,
+				B970581427E6220300B4902B /* DefaultSnackMessage.swift */,
+				B970581627E6281600B4902B /* InfoSnackView.swift */,
 			);
 			path = SnackMessage;
 			sourceTree = "<group>";
@@ -253,8 +265,12 @@
 				B91B614F27BD2F4200C01090 /* EventBus.swift in Sources */,
 				B9E22E1D27E1D14000BBA499 /* UIView.swift in Sources */,
 				B91B614D27BD2D5000C01090 /* AnyBus.swift in Sources */,
+				B970582427E6DBE000B4902B /* String.swift in Sources */,
 				B9E3AA2127C394D500D0554E /* DictionaryThreadSafeWrapper.swift in Sources */,
+				B970581727E6281600B4902B /* InfoSnackView.swift in Sources */,
 				B91B612B27BD11F300C01090 /* Common.docc in Sources */,
+				B970581527E6220300B4902B /* DefaultSnackMessage.swift in Sources */,
+				B970581327E61E5000B4902B /* SnackManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,3 +25,26 @@ public extension UIView.AnimationCurve {
         }
     }
 }
+
+public extension UIView {
+
+    func stretch(to view: UIView, insets: UIEdgeInsets = .zero) {
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            self.topAnchor.constraint(equalTo: view.topAnchor, constant: insets.top),
+            self.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: insets.left),
+            self.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -insets.right),
+            self.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -insets.bottom),
+        ])
+    }
+    
+    func stretch(insets: UIEdgeInsets = .zero) {
+        guard let view = self.superview else {
+             return
+        }
+        
+        self.stretch(to: view, insets: insets)
+    }
+}

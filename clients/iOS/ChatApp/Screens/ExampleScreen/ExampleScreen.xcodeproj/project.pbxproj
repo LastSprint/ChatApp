@@ -14,6 +14,8 @@
 		B9D028C127E43E9B001B8305 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028BD27E43E9B001B8305 /* Controller.swift */; };
 		B9D028C227E43E9B001B8305 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028BE27E43E9B001B8305 /* Service.swift */; };
 		B9D028C327E43E9B001B8305 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D028BF27E43E9B001B8305 /* Presenter.swift */; };
+		B9FDFA3327E45A45002E034C /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FDFA3227E45A45002E034C /* Common.framework */; };
+		B9FDFA3427E45A46002E034C /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9FDFA3227E45A45002E034C /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B9FDFA3527E45A46002E034C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B9FDFA3427E45A46002E034C /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B9D0283B27E43BDF001B8305 /* ExampleScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExampleScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D0283E27E43BDF001B8305 /* ExampleScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleScreen.h; sourceTree = "<group>"; };
@@ -35,6 +51,7 @@
 		B9D028BD27E43E9B001B8305 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		B9D028BE27E43E9B001B8305 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		B9D028BF27E43E9B001B8305 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		B9FDFA3227E45A45002E034C /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FDFA3327E45A45002E034C /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +79,7 @@
 			children = (
 				B9D0283D27E43BDF001B8305 /* ExampleScreen */,
 				B9D0283C27E43BDF001B8305 /* Products */,
+				B9FDFA3127E45A45002E034C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +105,14 @@
 			path = ExampleScreen;
 			sourceTree = "<group>";
 		};
+		B9FDFA3127E45A45002E034C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDFA3227E45A45002E034C /* Common.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -108,6 +135,7 @@
 				B9D0283727E43BDF001B8305 /* Sources */,
 				B9D0283827E43BDF001B8305 /* Frameworks */,
 				B9D0283927E43BDF001B8305 /* Resources */,
+				B9FDFA3527E45A46002E034C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

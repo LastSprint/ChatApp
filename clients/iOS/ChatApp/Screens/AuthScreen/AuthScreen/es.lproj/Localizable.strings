@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  AuthScreen
+
+  Created by Александр Кравченков on 20.03.2022.
+  
+*/
+
+"error.general" = "Algo salió mal.\nPor favor intente mas tarde";

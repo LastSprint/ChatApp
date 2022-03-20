@@ -8,13 +8,7 @@
 import Foundation
 import UIKit
 import Combine
-
-protocol ViewInput: AnyObject {
-    func onPasswordIsEmpty()
-    func onUsernameIsEmpty()
-    
-    func onLoading(isStarted: Bool)
-}
+import Common
 
 final class Controller: UIViewController {
     
@@ -29,9 +23,23 @@ final class Controller: UIViewController {
     
     var output: ViewOutput?
     
+    private let snackManager: SnackManager
+    
     private var cancellables: Set<AnyCancellable> = []
     
     private var constraintSignInButtonToBottom: NSLayoutConstraint?
+    
+    // MARK: - Init
+    
+    public init(snackManager: SnackManager) {
+        self.snackManager = snackManager
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.snackManager = DefaultSnackManager.shared
+        super.init(coder: coder)
+    }
     
     // MARK: - Lifecycle
     
@@ -61,6 +69,14 @@ final class Controller: UIViewController {
 // MARK: - ViewInput
 
 extension Controller: ViewInput {
+    
+    func showGeneralError() {
+        self.snackManager.show(
+            snack: DefaultSnackMessage.error(message: Localized.Error.general.localized()),
+            in: self.view
+        )
+    }
+    
     func onPasswordIsEmpty() {
         
     }

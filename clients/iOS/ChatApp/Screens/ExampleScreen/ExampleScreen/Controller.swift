@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Common
 
 /// Describes public ``Controller`` interface
 ///
@@ -34,6 +35,12 @@ public protocol ViewInput: AnyObject {
 /// But if you are managing animations and other staff which is not connected to logic
 /// it's better te leave it in `Controller`
 ///
+/// ## Showing errors
+///
+/// Default way to show errors is to use `SnackManager` and `SnackMessage` form package `Common`
+///
+/// Good practice is to pass `SnackManager` to UIViewController in `init` and use it later.
+///
 /// ## About formatting
 /// 1. It's better to implement ``ViewInput`` protocol in extension
 /// 2. It's better to implement UI configuration in extension and call root configuration method `configureUI` and from this method call all other (layout, appearance, etc.)
@@ -49,6 +56,20 @@ public final class Controller: UIViewController {
     // MARK: - Properties
     
     var output: ViewOutput?
+    
+    private let snackManager: SnackManager
+    
+    // MARK: - Init
+    
+    init(snackManager: SnackManager) {
+        self.snackManager = snackManager
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.snackManager = DefaultSnackManager.shared
+        super.init(coder: coder)
+    }
     
     // MARK: - Lifecycle
     

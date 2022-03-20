@@ -12,7 +12,7 @@ import UIKit
 public struct Assembler {
     
     public static func assemble(bus: AnyBus<String>, logger: Logger) -> UIViewController {
-        let view = Controller()
+        let view = Controller(snackManager: DefaultSnackManager.shared)
         let presenter = Presenter(msgBus: bus, logger: logger)
         let service = Service(msgBus: bus, logger: logger)
         

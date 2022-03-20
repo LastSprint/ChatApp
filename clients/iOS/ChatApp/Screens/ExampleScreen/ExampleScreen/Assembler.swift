@@ -22,7 +22,7 @@ import UIKit
 /// because it should contain only building logic.
 public struct Assembler {
     public static func assemble(msgBus: AnyBus<String>) -> UIViewController {
-        let view = Controller()
+        let view = Controller(snackManager: DefaultSnackManager.shared)
         let presenter = Presenter(msgBus: msgBus, logger: ConsoleLoger())
         let service = Service(messageBus: msgBus, logger: ConsoleLoger())
         
