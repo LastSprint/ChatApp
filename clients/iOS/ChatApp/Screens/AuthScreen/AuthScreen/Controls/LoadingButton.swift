@@ -8,7 +8,10 @@
 import Foundation
 import UIKit
 
+/// This button shows spinner when loading and also implement press-state
 final class LaodingButton: UIButton {
+    
+    // MARK: - Subviews
     
     var activityIndicator = UIActivityIndicatorView() {
         didSet {
@@ -24,7 +27,21 @@ final class LaodingButton: UIButton {
         }
     }
     
+    // MARK: - Properties
+    
     private var title: String?
+    
+    var isLoading: Bool {
+        return self.activityIndicator.isAnimating
+    }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            self.alpha = isHighlighted ? 0.5 : 1
+        }
+    }
+    
+    // MARK: - Init
     
     convenience init() {
         self.init(frame: .zero)
@@ -40,11 +57,9 @@ final class LaodingButton: UIButton {
         self.activityIndicator = UIActivityIndicatorView()
         self.configureUI()
     }
-    
-    var isLoading: Bool {
-        return self.activityIndicator.isAnimating
-    }
-    
+}
+
+extension LaodingButton {
     func startLoading() {
         guard !self.isLoading else { return }
         
@@ -101,7 +116,7 @@ private extension LaodingButton {
         self.viewLoadingBackground.backgroundColor = self.backgroundColor
         
         self.viewLoadingBackground.isHidden = true
-        
+    
         NSLayoutConstraint.activate([
             self.viewLoadingBackground.topAnchor.constraint(equalTo: self.topAnchor),
             self.viewLoadingBackground.leadingAnchor.constraint(equalTo: self.leadingAnchor),
