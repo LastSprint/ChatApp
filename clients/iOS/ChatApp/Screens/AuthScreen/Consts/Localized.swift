@@ -8,7 +8,12 @@
 import Foundation
 
 enum Localized {
+    
+    static let bundle = Bundle(for: Controller.self)
+    
     enum Error {
-        static let general = "error.generalajsdghjsaghfdghasgdfhjbauwsbfuxyagsufhgxhbadjsfgasudgfxjhadhsfgj"
+        static var general: String {
+            return "error.general".localized(bundle: Localized.bundle)
+        }
     }
 }

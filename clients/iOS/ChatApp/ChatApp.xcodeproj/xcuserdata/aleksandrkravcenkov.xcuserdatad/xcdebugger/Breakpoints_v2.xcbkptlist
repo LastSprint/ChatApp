@@ -196,5 +196,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CA8BFC2-27A9-4A9F-ABB6-E30A2BFE6323"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/Common/Extensions/String.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "localized(bundle:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6CA8BFC2-27A9-4A9F-ABB6-E30A2BFE6323 - 3366809441930233"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift.String.localized() -&gt; Swift.String"
+                  moduleName = "Common"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksandrkravcenkov/repo/opensource/ChatApp/clients/iOS/ChatApp/Common/Common/Extensions/String.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "6CA8BFC2-27A9-4A9F-ABB6-E30A2BFE6323 - ef13bcc625942e21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift.String.localized(bundle: __C.NSBundle) -&gt; Swift.String"
+                  moduleName = "Common"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksandrkravcenkov/repo/opensource/ChatApp/clients/iOS/ChatApp/Common/Common/Extensions/String.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

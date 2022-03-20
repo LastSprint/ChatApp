@@ -72,7 +72,7 @@ extension Controller: ViewInput {
     
     func showGeneralError() {
         self.snackManager.show(
-            snack: DefaultSnackMessage.error(message: Localized.Error.general.localized()),
+            snack: DefaultSnackMessage.error(message: Localized.Error.general),
             in: self.view
         )
     }

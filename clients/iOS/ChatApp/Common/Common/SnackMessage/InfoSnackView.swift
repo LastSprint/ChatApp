@@ -12,7 +12,8 @@ import UIKit
 ///
 /// This snack contains one image and text label
 ///
-/// Also it could be configured with predefined appearance via ``Kind`` and ``configure(as:)``
+/// Also it could be configured with predefined appearance via ``Kind``
+/// and ``InfoSnackView/configure(as:message:)``
 public final class InfoSnackView: UIView {
 
     // MARK: - Nested types
