@@ -7,3 +7,9 @@
 */
 
 "error.general" = "Something went wrong.\nPlease try later";
+
+"auth.textField.password.error.empty" = "Password can't be empty";
+"auth.textField.username.error.empty" = "Username can't be empty";
+
+"auth.textField.username.placeholder" = "Username";
+"auth.textField.password.placeholder" = "Password";

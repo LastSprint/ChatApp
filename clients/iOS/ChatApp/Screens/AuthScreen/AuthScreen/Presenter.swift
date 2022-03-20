@@ -37,14 +37,16 @@ final class Presenter {
 extension Presenter: ViewOutput {
     func signIn(userName: String?, password: String?) {
         
-        if userName == nil { self.view?.onUsernameIsEmpty() }
-        if password == nil { self.view?.onPasswordIsEmpty() }
+        if userName?.isEmpty ?? true { self.view?.onUsernameIsEmpty() }
+        if userName?.isEmpty ?? true { self.view?.onPasswordIsEmpty() }
         
         // i know that it's kind of doubling, but in the other hands it's much easier to read.
         
         guard
             let userName = userName,
-            let password = password
+            let password = password,
+            !userName.isEmpty,
+            !password.isEmpty
         else {
             return
         }

@@ -15,8 +15,8 @@ final class Controller: UIViewController {
     // MARK: - Subviews
     
     private let imageViewLogo = UIImageView()
-    private let textFieldUserName = CustomTextField()
-    private let textFieldPassword = CustomTextField()
+    private let textFieldUserName = TextFieldHint()
+    private let textFieldPassword = TextFieldHint()
     private let buttonSignIn = LaodingButton()
     
     // MARK: - Properties
@@ -51,8 +51,8 @@ final class Controller: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.buttonSignIn.layer.cornerRadius = self.buttonSignIn.frame.height / 2
-        self.textFieldPassword.layer.cornerRadius = self.textFieldPassword.frame.height / 2
-        self.textFieldUserName.layer.cornerRadius = self.textFieldUserName.frame.height / 2
+        self.textFieldPassword.textField.layer.cornerRadius = self.textFieldPassword.textField.frame.height / 2
+        self.textFieldUserName.textField.layer.cornerRadius = self.textFieldUserName.textField.frame.height / 2
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -78,11 +78,15 @@ extension Controller: ViewInput {
     }
     
     func onPasswordIsEmpty() {
-        
+        self.textFieldPassword.setStateToError(
+            message: Localized.Auth.TextField.Password.Error.empty
+        )
     }
     
     func onUsernameIsEmpty() {
-        
+        self.textFieldUserName.setStateToError(
+            message: Localized.Auth.TextField.Username.Error.empty
+        )
     }
     
     func onLoading(isStarted: Bool) {
@@ -100,7 +104,10 @@ private extension Controller {
  
     @objc
     func actionSignInButtonTap() {
-        self.output?.signIn(userName: self.textFieldUserName.text, password: self.textFieldPassword.text)
+        self.output?.signIn(
+            userName: self.textFieldUserName.textField.text,
+            password: self.textFieldPassword.textField.text
+        )
     }
     
     @objc
@@ -214,28 +221,26 @@ private extension Controller {
     func configureTextFieldUserName() {
         self.view.addSubview(self.textFieldUserName)
         self.textFieldUserName.translatesAutoresizingMaskIntoConstraints = false
-        self.textFieldUserName.placeholder = "Username"
-        self.textFieldUserName.backgroundColor = .secondarySystemBackground
-        self.textFieldUserName.textColor = .label
-        self.textFieldUserName.autocorrectionType = .no
-        self.textFieldUserName.textPadding = .init(top: 0, left: 8, bottom: 0, right: 0)
+        self.textFieldUserName.textField.placeholder = Localized.Auth.TextField.Username.placeholder
+        self.textFieldUserName.textField.backgroundColor = .secondarySystemBackground
+        self.textFieldUserName.textField.textColor = .label
+        self.textFieldUserName.textField.autocorrectionType = .no
+        self.textFieldUserName.textField.textPadding = .init(top: 12, left: 8, bottom: 12, right: 0)
         
         NSLayoutConstraint.activate([
             self.textFieldUserName.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 16),
             self.textFieldUserName.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -16),
-            
-            self.textFieldUserName.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
     
     func configureTextFieldPassword() {
         self.view.addSubview(self.textFieldPassword)
         self.textFieldPassword.translatesAutoresizingMaskIntoConstraints = false
-        self.textFieldPassword.placeholder = "Password"
-        self.textFieldPassword.backgroundColor = .secondarySystemBackground
-        self.textFieldPassword.textColor = .label
-        self.textFieldPassword.isSecureTextEntry = true
-        self.textFieldPassword.textPadding = .init(top: 0, left: 8, bottom: 0, right: 0)
+        self.textFieldPassword.textField.placeholder = Localized.Auth.TextField.Password.placeholder
+        self.textFieldPassword.textField.backgroundColor = .secondarySystemBackground
+        self.textFieldPassword.textField.textColor = .label
+        self.textFieldPassword.textField.isSecureTextEntry = true
+        self.textFieldPassword.textField.textPadding = self.textFieldUserName.textField.textPadding
         
         let middleX = self.textFieldPassword.centerYAnchor.constraint(lessThanOrEqualTo: self.view.layoutMarginsGuide.centerYAnchor)
         middleX.priority = UILayoutPriority(UILayoutPriority.defaultHigh.rawValue - 1)
@@ -244,8 +249,6 @@ private extension Controller {
             self.textFieldPassword.leadingAnchor.constraint(equalTo: self.textFieldUserName.leadingAnchor),
             self.textFieldPassword.trailingAnchor.constraint(equalTo: self.textFieldUserName.trailingAnchor),
             self.textFieldPassword.topAnchor.constraint(equalTo: self.textFieldUserName.bottomAnchor, constant: 16),
-            
-            self.textFieldPassword.heightAnchor.constraint(equalToConstant: 40),
             middleX
         ])
     }

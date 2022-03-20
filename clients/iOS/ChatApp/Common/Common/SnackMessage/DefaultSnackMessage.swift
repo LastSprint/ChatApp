@@ -80,13 +80,13 @@ extension DefaultSnackMessage: SnackMessage {
         
         // run animation loop
         
-        UIView.animate(withDuration: 1.5, delay: 0.5, options: [.curveEaseIn]) {
+        UIView.animate(withDuration: 0.75, delay: 0.5, options: [.curveEaseOut]) {
             topConstraint.constant = self.frame.height
             self.superview?.layoutIfNeeded()
         } completion: { isCompleted in
             guard isCompleted else { return }
 
-            UIView.animate(withDuration: 1.5, delay: 3, options: [.curveEaseIn]) {
+            UIView.animate(withDuration: 0.75, delay: 3, options: [.curveEaseIn]) {
                 topConstraint.constant = -self.frame.height
                 self.superview?.layoutIfNeeded()
                 self.frame.origin.y = -self.frame.size.height

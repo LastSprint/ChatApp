@@ -11,8 +11,6 @@ import UIKit
 /// This text field provides possiblity to change text position by setting `CustomUITextField.textextPadding`
 final class CustomTextField: UITextField {
     
-    let labelHint = UILabel()
-    
     var textPadding = UIEdgeInsets.zero
     
     override public func textRect(forBounds bounds: CGRect) -> CGRect {
@@ -25,13 +23,5 @@ final class CustomTextField: UITextField {
 
     override public func editingRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: textPadding)
-    }
-}
-
-// MARK: - Configure UI
-
-private extension CustomTextField {
-    func configureUI() {
-         
     }
 }

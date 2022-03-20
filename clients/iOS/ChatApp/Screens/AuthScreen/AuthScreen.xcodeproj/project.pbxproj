@@ -11,6 +11,7 @@
 		B970581C27E6D85200B4902B /* ViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970581B27E6D85200B4902B /* ViewError.swift */; };
 		B970581F27E6DA3600B4902B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B970582127E6DA3600B4902B /* Localizable.strings */; };
 		B970582727E6DD3C00B4902B /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970582627E6DD3C00B4902B /* Localized.swift */; };
+		B970582927E6F95000B4902B /* TextFieldWithHint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970582827E6F95000B4902B /* TextFieldWithHint.swift */; };
 		B9D0286D27E43C07001B8305 /* AuthScreen.docc in Sources */ = {isa = PBXBuildFile; fileRef = B9D0286C27E43C07001B8305 /* AuthScreen.docc */; };
 		B9D0287327E43C07001B8305 /* AuthScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D0286827E43C07001B8305 /* AuthScreen.framework */; };
 		B9D0287827E43C07001B8305 /* AuthScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0287727E43C07001B8305 /* AuthScreenTests.swift */; };
@@ -56,6 +57,7 @@
 		B970582027E6DA3600B4902B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B970582227E6DA3B00B4902B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B970582627E6DD3C00B4902B /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		B970582827E6F95000B4902B /* TextFieldWithHint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithHint.swift; sourceTree = "<group>"; };
 		B9D0286827E43C07001B8305 /* AuthScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D0286B27E43C07001B8305 /* AuthScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthScreen.h; sourceTree = "<group>"; };
 		B9D0286C27E43C07001B8305 /* AuthScreen.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AuthScreen.docc; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				B9D028B227E43E80001B8305 /* CustomTextField.swift */,
 				B9D028B327E43E80001B8305 /* LoadingButton.swift */,
+				B970582827E6F95000B4902B /* TextFieldWithHint.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				B9D028B727E43E80001B8305 /* Controller.swift in Sources */,
 				B9D028B827E43E80001B8305 /* SignInRequestModel.swift in Sources */,
 				B970582727E6DD3C00B4902B /* Localized.swift in Sources */,
+				B970582927E6F95000B4902B /* TextFieldWithHint.swift in Sources */,
 				B970581C27E6D85200B4902B /* ViewError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

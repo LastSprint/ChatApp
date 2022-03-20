@@ -7,3 +7,8 @@
 */
 
 "error.general" = "Algo salió mal.\nPor favor intente mas tarde";
+"auth.textField.password.error.empty" = "La contraseña no puede estar vacía";
+"auth.textField.username.error.empty" = "El nombre de usuario no puede estar vacío";
+
+"auth.textField.username.placeholder" = "Contraseña";
+"auth.textField.password.placeholder" = "Usuario";

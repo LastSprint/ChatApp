@@ -16,4 +16,32 @@ enum Localized {
             return "error.general".localized(bundle: Localized.bundle)
         }
     }
+
+    enum Auth {
+        enum TextField {
+            enum Password {
+                enum Error {
+                    static var empty: String {
+                        return "auth.textField.password.error.empty".localized(bundle: Localized.bundle)
+                    }
+                }
+                
+                static var placeholder: String {
+                    return "auth.textField.password.placeholder".localized(bundle: Localized.bundle)
+                }
+            }
+            
+            enum Username {
+                enum Error {
+                    static var empty: String {
+                        return "auth.textField.username.error.empty".localized(bundle: Localized.bundle)
+                    }
+                }
+                
+                static var placeholder: String {
+                    return "auth.textField.username.placeholder".localized(bundle: Localized.bundle)
+                }
+            }
+        }
+    }
 }
